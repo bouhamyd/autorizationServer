@@ -1,0 +1,41 @@
+auth:
+  cert:
+    filePath: classpath:bblmsacert.jks
+    password: sopra*
+  token:
+    accessValiditySeconds: 1800
+    refreshValidityMinutes: 180
+api:
+  title:  Generation du token oauth 2
+  description: Documentation de l'API REST exposée par l'application de génération des tokens
+  version: 0.0.1
+  termsOfServiceUrl: https://toto
+
+spring:
+  jackson:
+    serialization:
+      write_dates_as_timestamps: false
+#datasource:
+#    url: jdbc:h2:file:~/IdeaProjects/ansoumane/bdd/oautToken
+#    username: root
+#    password: root
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+spring.datasource.url: jdbc:mysql://localhost:3306/oAuth2?serverTimezone=UTC
+spring.datasource.username: root
+spring.datasource.password:
+spring.datasource.driver-class-name: com.mysql.jdbc.Driver
+spring.jpa.hibernate.use-new-id-generator-mappings: false
+spring.jpa.hibernate.ddl-auto: create
+spring.jpa.database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+security:
+  oauth2:
+    client:
+      client-id: appid
+      client-secret: appsecret
+  basic:
+    enabled: false

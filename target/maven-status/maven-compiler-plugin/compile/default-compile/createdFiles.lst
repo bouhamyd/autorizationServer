@@ -1,0 +1,16 @@
+com\api\microservices\domaine\Authority.class
+com\api\microservices\services\AuthorityRepository.class
+com\api\microservices\services\GenericRepository.class
+com\api\microservices\configuration\AuthServerConfiguration.class
+com\api\microservices\configuration\CustomAccessTokenConverter.class
+com\api\microservices\configuration\TokenProperties.class
+com\api\microservices\domaine\IdentifiableEntity.class
+com\api\microservices\configuration\ServerSecurityConfig.class
+com\api\microservices\services\AuthorityService.class
+com\api\microservices\configuration\CertProperties.class
+com\api\microservices\services\UserService.class
+com\api\microservices\domaine\CustomUser.class
+com\api\microservices\services\UserRepository.class
+com\api\microservices\domaine\User.class
+com\api\microservices\AutorizationServerApplication.class
+com\api\microservices\configuration\DataSourceProperties.class
